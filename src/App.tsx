@@ -15,7 +15,7 @@ function App() {
 		  options: [
 			{ id: 0, text: "Linus Torvalds", isCorrect: true },
 			{ id: 1, text: "Bill Gates", isCorrect: false },
-			{ id: 2, text: "James Gosling", isCorrect: false },
+			{ id: 2, text: "James Brown", isCorrect: false },
 			{ id: 3, text: "Junio Hamano", isCorrect: false },
 		  ],
 		},
