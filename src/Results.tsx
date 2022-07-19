@@ -1,22 +1,20 @@
 import React, { useState } from 'react';
 import { createFalse } from 'typescript';
+import logo from './aca.png';
 import './App.css';
-import Results from './Results';
 
-function App() {
-	const [showFinalResults, setFinalResults] = useState(false);
+
+function Results() {
+	const [showFinalResults, setFinalResults] = useState(true);
 	const [score, setScore] = useState(0);
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showAnswers, setAnswers] = useState(true);
-
 	const questions = [
 		{
 		  text: "Who is attributed with inventing Git?",
 		  options: [
 			{ id: 0, text: "Linus Torvalds", isCorrect: true },
-			{ id: 1, text: "Bill Gates", isCorrect: false },
-			{ id: 2, text: "James Gosling", isCorrect: false },
-			{ id: 3, text: "Junio Hamano", isCorrect: false },
+
 		  ],
 		},
 		{
@@ -591,6 +589,11 @@ const optionClicked = (isCorrect: boolean)  => {
 		setScore (score + 1);
 	}
 
+    else{
+
+
+    }
+
 	if(currentQuestion + 1 < questions.length)
 	{
 		setCurrentQuestion(currentQuestion + 1);
@@ -598,6 +601,7 @@ const optionClicked = (isCorrect: boolean)  => {
 		else {
 			setFinalResults(true);
 		}
+        
 	
 }
 
@@ -607,17 +611,15 @@ const optionClicked = (isCorrect: boolean)  => {
 		setScore(0);
 		setFinalResults(false);
 	}
-	const showResults = () =>{
-		setAnswers(true);
-		<Results/>;
 
+	const showResults = () =>{
+		setFinalResults(false);
 	}
 
 
 
-
   return (
-    <div className="App">
+    <div>
 		
 	  <h1>ACA Quiz Application</h1>
 	  <h2>Your Score: {score}</h2>
@@ -637,13 +639,12 @@ const optionClicked = (isCorrect: boolean)  => {
 						{questions[currentQuestion].options.map((option) => {
 							return(
 
-						<li onClick = {() => optionClicked(option.isCorrect)} key = {option.id}>{option.text}</li>
-						
+		<li onClick = {() => optionClicked(option.isCorrect)} key = {option.id}>{option.text}</li>
 							);
 						})}
 					  </ul>
 				  </div></>
-  
+	  
 	  )}
     </div>
 	);
@@ -651,4 +652,4 @@ const optionClicked = (isCorrect: boolean)  => {
 
 }
 
-export default App;
+export default Results;
