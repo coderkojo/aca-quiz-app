@@ -295,19 +295,19 @@ function App() {
 		  {
 			text: "What are the three main 'simple types' in TypeScript?",
 			options: [
-			  { id: 0, text: "Cool", isCorrect: false },
-			  { id: 1, text: "Lame", isCorrect: true },
-			  { id: 2, text: "Awesome", isCorrect: true },
-			  { id: 3, text: "Life", isCorrect: false },
+			  { id: 0, text: "Iteration", isCorrect: false },
+			  { id: 1, text: "Boolean, Number String", isCorrect: true },
+			  { id: 2, text: "Floating, Point, Usestate", isCorrect: false },
+			  { id: 3, text: "Function, Method, If", isCorrect: false },
 			],
 		  },
 		  {
-			text: "You can disable implicit variable type assignment by enabling the compiler option:",
+			text: "What is JSX",
 			options: [
-			  { id: 0, text: "Cool", isCorrect: false },
-			  { id: 1, text: "Lame", isCorrect: true },
-			  { id: 2, text: "Awesome", isCorrect: true },
-			  { id: 3, text: "Life", isCorrect: false },
+			  { id: 0, text: "is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced ", isCorrect: false },
+			  { id: 1, text: "is a member function in the base class that we expect to redefine in derived classes.", isCorrect: false },
+			  { id: 2, text: "JSX is a syntax extension of JavaScript. It is used with React to describe what the user interface should look like. ", isCorrect: true },
+			  { id: 3, text: "A language used to develop server apps", isCorrect: false },
 			],
 		  },
 		  {
