@@ -4,7 +4,7 @@ import './App.css';
 import Results from './Results';
 
 function App() {
-	const [showFinalResults, setFinalResults] = useState(true);
+	const [showFinalResults, setFinalResults] = useState(false);
 	const [score, setScore] = useState(0);
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showAnswers, setAnswers] = useState(true);
@@ -22,7 +22,7 @@ function App() {
 		{
 		  text: "What is the default text editor for the Bash shell with a Windows-based Git install?",
 		  options: [
-			{ id: 0, text: "Emacs", isCorrect: false },
+			{ id: 0, text: "Vscode", isCorrect: false },
 			{ id: 1, text: "Notepad++", isCorrect: false },
 			{ id: 2, text: "Vim", isCorrect: true },
 			{ id: 3, text: "Bash", isCorrect: false },
