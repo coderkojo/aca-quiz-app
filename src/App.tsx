@@ -609,7 +609,7 @@ const optionClicked = (isCorrect: boolean)  => {
 	}
 
 	const showResults = () =>{
-
+		//changes
 
 	}
 
